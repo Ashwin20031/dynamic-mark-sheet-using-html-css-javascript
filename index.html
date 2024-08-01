@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark sheet</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="mark-container">
+      <header>
+        <div class="sc-no">
+          <p>Sr.No.<span>00000004</span></p>
+        </div>
+        <div class="logo">
+          <img src="./asset/hindusthan.jpg" alt="hindusthan" />
+        </div>
+        <div class="qr-code">
+          <img src="./asset/qrcode.png" alt="qrcode" />
+        </div>
+      </header>
+
+      <div class="college-info">
+        <div class="name">
+          <p>Hindusthan College of Engineering and Technology</p>
+        </div>
+        <div class="info">
+          <p>
+            An Autonomous Institution with NAAC A+ Certification and NBA
+            Certification
+          </p>
+          <p>
+            Valley Campus, Pollachi Highway, Coimbatore - 641 032, TamilNadu,
+            INDIA.
+          </p>
+        </div>
+      </div>
+
+      <div class="marks-content">
+        <div class="title">
+          <p>Annual Statement of Marks</p>
+        </div>
+
+        <div class="candidate-info">
+          <table>
+            <tr>
+              <th colspan="2" class="mark-title">Name of the Candidate</th>
+              <th colspan="2" class="mark-title">Course Name with code</th>
+            </tr>
+            <tr>
+              <td colspan="2">Ashwin L</td>
+              <td colspan="2"><p>Computer Science Engineering</p><p>CS53002</p></td>
+            </tr>
+            <tr>
+              <th class="mark-title">Reg No.</th>
+              <th class="mark-title">Enrollment No</th>
+              <th class="mark-title" colspan="2">Authorized Training Center Name with Code</th>
+        
+            </tr>
+            <tr>
+              <td>720721104015</td>
+              <td>9839482421</td>
+              <td><p>(Authorized Training Center Name)</p>
+                <p>(Authorized Training Center Name)</p></td>
+    
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="total-marks">
+        <table>
+          <tr>
+            <th rowspan="2">Subject code</th>
+
+            <th rowspan="2">Subject Name</th>
+
+            <th rowspan="2">Marks</th>
+
+            <th colspan="3">Marks obtained</th>
+
+            <th rowspan="2">Total in Words</th>
+          </tr>
+          <tr>
+            <th>Theory</th>
+            <th>Pratical</th>
+            <th>Total</th>
+          </tr>
+
+          <tr>
+            <td>21CS7201</td>
+            <td>CLOUD COMPUTING</td>
+            <td>100</td>
+               <td><input type="number" min="0" max="60" oninput="updateTotal(this)"></td>
+            <td><input type="number" min="0" max="40" oninput="updateTotal(this)"></td>
+            <td class="total-mark">0</td>
+            <td class="total-in-words">zero zero</td>
+          </tr>
+          <tr>
+            <td>21CS7202</td>
+            <td>AI ANALYST</td>
+            <td>100</td>
+               <td><input type="number" min="0" max="60" oninput="updateTotal(this)"></td>
+            <td><input type="number" min="0" max="40" oninput="updateTotal(this)"></td>
+            <td class="total-mark">0</td>
+            <td class="total-in-words">zero zero</td>
+          </tr>
+          <tr>
+            <td>21CS7401</td>
+            <td>MACHINE LEARNING TECHNIQUES</td>
+            <td>100</td>
+            <td><input type="number" min="0" max="60" oninput="updateTotal(this)"></td>
+            <td><input type="number" min="0" max="40" oninput="updateTotal(this)"></td>
+            <td class="total-mark">0</td>
+            <td class="total-in-words">zero zero</td>
+          </tr>
+          <tr>
+            <td>21CS7301</td>
+            <td>NOSQL DATABASE WITH MONGODB</td>
+            <td>100</td>
+            <td><input type="number" min="0" max="60" oninput="updateTotal(this)"></td>
+            <td><input type="number" min="0" max="40" oninput="updateTotal(this)"></td>
+            <td class="total-mark">0</td>
+            <td class="total-in-words">zero zero</td>
+          </tr>
+          <tr>
+            <td>21CS7206</td>
+            <td>DEVOPS</td>
+            <td>100</td>
+            <td><input type="number" min="0" max="60" oninput="updateTotal(this)"></td>
+            <td><input type="number" min="0" max="40" oninput="updateTotal(this)"></td>
+            <td class="total-mark">0</td>
+            <td class="total-in-words">zero zero</td>
+          </tr>
+
+          <tr>
+            <td>21CS7221</td>
+            <td>BLOCK CHAIN TECHNOLOGY</td>
+            <td>100</td>
+            <td><input type="number" min="0" max="60" oninput="updateTotal(this)"></td>
+            <td><input type="number" min="0" max="40" oninput="updateTotal(this)"></td>
+            <td class="total-mark">0</td>
+            <td class="total-in-words">zero zero</td>
+          </tr>
+          <tfoot>
+            <tr>
+              <td colspan="7">GRAND TOTAL 001</td>
+            </tr>
+            <tr>
+              <td colspan="7">IN WORDS ZERO ZERO ZERO</td>
+            </tr>
+            <tr>
+              <td colspan="2">Month and Year of Examination</td>
+              <td colspan="2">No .of Subject Offered</td>
+              <td colspan="1">Result</td>
+              <td colspan="1">Percentage</td>
+              <td colspan="1">Grade</td>
+            </tr>
+            <tr>
+                <td colspan="2" id="exam-month-year">May 2024</td>
+                <td colspan="2" id="subjects-offered">T5+P3=8</td>
+                <td colspan="1" id="result">PASS</td>
+                <td colspan="1" id="percentage">0.00%</td>
+                <td colspan="1" id="grade">(A+)</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <footer>
+        <div class="date"><span class="mark-title">Date:</span>10-11-2-34</div>
+        <div class="sign">
+          <p>(Signature of Deputy)</p>
+          <p>Controller of Examination</p>
+          <p class="mark-title">Deputy Controller of Examination</p>
+        </div>
+      </footer>
+      <section><p class="mark-title">Subject with * indicates Exemption</p></section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
